@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+  <title>L'Amore di Amalfi</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');  
+    body {
+      background-color: #FFF8F0;
+    }
+     
+    h1, h2, h3{
+      color: black;
+      font-family: "The Nautigal", cursive;
+    }
+    
+    h1 {
+      font-size: 400%;
+    }
+     
+    h2 {
+      font-size: 280%;
+    }
+
+    h3 {
+      font-size: 180%;
+    }
+    
+    .pasta-pic, #header-img {
+      border: solid 2px black;
+      border-radius: 10px;
+    }
+   
+    nav li {
+      background-color: tomato;
+      padding: 7px;
+      margin: 1em auto;
+      margin-right: 37px;
+      width: 25%;
+      border: 2px solid;
+      border-radius: 5px;
+      list-style-type: none;
+      display: inline-block;
+      font-family: Cursive;
+      font-size: 20px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      color: black;
+    }
+    
+    figure > img {
+      display:block; 
+      margin: 0 auto;
+    }
+
+    figure > figcaption, header {
+      text-align: center;  
+    } 
+    fieldset {
+      display: inline-block;
+      width: 21%;
+    }
+  </style>
+ </head.
+ <body>
+ <header>
+  <h1 style="text-align:center;">L'Amore di Amalfi</h1>
+  <img id="header-img"
+   style="display:block; margin: 0 auto;"
+   width="600"
+   src="https://www.touristitaly.com/wp-content/uploads/2023/11/shutterstock_1054754711.jpg"
+   alt="L'Amore di Amalfi"
+  />
+  <nav id="nav-item">
+   <ul>
+    <li><a href="#menu-section">Menu</a></li>
+    <br>
+    <li><a href="#placeyourorder-section">Order form</a></li>
+   </ul>
+  </nav>
+ </header>
+ <br><hr><br>
+ <body>
+ <main>
+  <section id="menu-section">
+    <h2 style="text-align:center;">Menu</h2>
+    <article>
+    <br>
+    <h3 style="text-align:center; font-size:220%;">Spaghetti Alla Carbonara</h3>
+    </article>
+    <br>
+    <figure>
+     <img 
+      class="pasta-pic"
+      width="500"
+      src="https://www.mamablip.com/ir/800/storage/Traditional-Spaghetti-alla-Carbonara_1131611747132.jpg"
+      alt="spaghetti alla carbonara"
+      />
+      <br>
+      <figcaption><p style= "color:black;"> <i>Spaghetti alla Carbonara, thick square spaghetti coated in a luscious creamy emulsion of eggs, grated Pecorino Romano, and fatty guanciale. A decadent bite that takes you back through time. <br><br> <strong>price= $14</strong></i></p></figcaption>
+    </figure>
+    <br><hr><br>
+    <article>
+    <br>
+    <h3 style="text-align:center; font-size:220%;">Pasta All'Amatriciana</h3>
+    </article>
+    <br>
+    <figure>
+     <img 
+      class="pasta-pic"
+      width="500"
+      src="https://www.andy-cooks.com/cdn/shop/articles/20250523052019-dinner-20for-20one-20-20spaghetti-20recipe_a6df358c-4930-4f91-b3f6-a8af793c0d30.jpg?v=1751520089&width=1600"
+      alt="pasta all'amatriciana"
+     />
+     <br>
+     <figcaption><p style= "color:black;"> <i>Pasta all'amatriciana, a close relative to carbonara and another one of the big 4 roman pastas. Take out the eggs and replace it with whole peeled san Marzano tomatoes, and what you get is a beautiful and equally as flavorful dish. <br><br> <b>N.b: your choice of either rigatoni, mezze manniche, or bucatini.</b> <br><br> <strong>price= $12</strong></i></p></figcaption>
+    </figure>
+    <br><hr><br>
+    <article>
+    <br>
+    <h3 style="text-align:center; font-size:220%;">Cacio e Pepe</h3>
+    </article>
+    <br>
+    <figure>
+     <img
+      class="pasta-pic"
+      width="500"
+      src="https://www.177milkstreet.com/assets/site/Recipes/_large/Updated-Cacio-e-Pepe.jpg"
+      alt="cacio e pepe"
+     />
+     <br>
+     <figcaption><p style= "color:black;"> <i>Cacio e Pepe, the most rustic a simple version of them all, the foundation. All you have here are 3 ingredients: Pecorino Romano, Black pepper, and love (pasta water!), and what you get is a creamy coating of flavor in every bite. <br><br> <strong>price= $10</strong></i></p></figcaption>
+    </figure>
+    <br><hr>
+   </section>
+   <br><br>
+   <section id="placeyourorder-section">
+     <h2>Place your Order</h2>
+     <form>
+      <h3>Your Selection</h3>
+      <label for="title1">
+	<p> Spaghetti Alla Carbonara: </p>
+      </label>
+        <input type="number" min="0" step="1" style= "height:20px;">
+      <label for="title2">
+	<p> Pasta All'Amatriciana: </p>
+      </label>
+        <input type="number" min="0" step="1" style= "height:20px;">
+      <label for="title3">
+	<p> Cacio e Pepe: </p>
+      </label>
+	<input type="number" min="0" step="1" style= "height:20px;">
+      <br><br><br>
+      <fieldset>
+      <legend><h3>Add-ons</h3></legend>
+      <input type="checkbox"> <label for="AOn1">Pecorino Romano ($2)</label><br>
+      <input type="checkbox"> <label for="AOn2">Parmigiano Reggiano ($3)</label><br>
+      <input type="checkbox"> <label for="AOn3">Extra guanciale ($1.5)</label><br>
+      <input type="checkbox"> <label for="AOn4">Drizzle of olive oil ($1.5)</label><br>
+      </fieldset>
+      <br><br>
+      <label for="tArea"><h3>Special Requests</h3></label>
+      <textarea id="data-entry" rows="5" cols="42" placeholder="Tell us!"></textarea>
+      <br><br><br><br>
+      <input type="submit" value="Go To Checkout" style= "width:150px; height:30px; font-size:15px;">
+      <input type="reset" style= "width:150px; height:30px; font-size:15px;">
+     </form>
+   </section>
+  </main>
+  </body>
+   <br><hr><br>
+ <footer>
+   <p>Made with love by 12ball</p>
+ </footer>
+ <html>
