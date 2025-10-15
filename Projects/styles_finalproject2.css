@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=The+Nautigal:wght@400;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'sansation', sans-serif;
+  font-family: 'Platypi', sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 header > h1 {
-  font-size: 19vw;
+  font-size: 18vw;
   margin-left: 2%;
   margin-top: 10px; 
 }
@@ -53,7 +53,7 @@ header > h1::first-letter {
 nav, ul, li, a {
   color: #FDF6E3;
   text-decoration: none;
-  font-size: 2vw;
+  font-size: 115%;
   position: relative;
 }
 
@@ -69,7 +69,8 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-  width: 100%;
+  width: 110%;
+  height: 4px;
 }
 
 .me-desc { 
@@ -81,7 +82,7 @@ nav ul li a:hover::after {
 }
 
 .me-desc h1 {
-  font-size: 150%;
+  font-size: 115%;
   margin-top: 20px;
 }
 
@@ -91,7 +92,7 @@ nav ul li a:hover::after {
 
 .section-bar {
   width: 100%;              
-  height: 135px;  
+  height: 140px;  
   margin-top: -380px;           
   background-color: #FFE066;
   position: relative;
