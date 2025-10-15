@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const display = document.getElementById("display-screen");
+  const display = document.getElementById("shit-inside");
   const buttons = document.querySelectorAll(".input-button");
 
   for (let button of buttons) {
