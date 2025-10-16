@@ -8,13 +8,32 @@
     <script src="cat-facts_script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="cat-header">
-            <h1>Get Your Random Cat Facts</h1>
-            <h2>We,ve got ourselves quite the website, huh?</h2>
+<body class="h-screen">
+    <header class="h-1/4">
+        <div class="cat-header bg-rose-400 text-sky-200 text-center h-full">
+            <h1 class="text-5xl py-5 pb-9">Get Your Random Cat Facts</h1>
+            <h2 class="text-2xl pb-4">We,ve got ourselves quite the website, huh?</h2>
             <p>Check it out below, try it and enjoy!</p>
         </div>
     </header>
+    <main class="h-3/5">
+        <div class="main-container bg-sky-300 h-full flex flex-row justify-center">
+            <img class="h-16 my-40 ml-7" src="https://media1.tenor.com/m/JAZzfZupTTcAAAAC/gil-cat.gif" alt="cat-gif">
+            <div class="cat-content text-center flex flex-col justify-center items-center">
+                <div class="cat-fact bg-slate-200 h-52 w-4/5 my-6 rounded-xl flex flex-col justify-center border-4 border-rose-400 shadow-lg">
+                    <p class="text-2xl px-4 py-6" id="fact-display">Click the button below to get a random cat fact!</p>
+                </div>
+                <button class="bg-rose-400 text-slate-100 px-6 py-3 my-5 rounded-xl hover:bg-rose-500" id="new-fact-button">Cat Fact</button>
+                <h2 class="my-5">How many of these did you already know?</h2>
+            </div>
+            <img class="h-16 my-40 mr-7" src="https://media1.tenor.com/m/JAZzfZupTTcAAAAC/gil-cat.gif" alt="cat-gif">
+        </div>    
+    </main>
+    <footer class="h-32 bg-red-300">
+        <div class="cat-footer text-center py-8 text-blue-400">
+            <p class="text-lg">Created by Alan M. Hakim</p>
+            <p class="text-sm">Data provided by <a class="underline" href="https://catfact.ninja/" target="_blank" rel="noopener noreferrer">catfact.ninja</a></p>
+        </div>
+    </footer>
 </body>
 </html>
