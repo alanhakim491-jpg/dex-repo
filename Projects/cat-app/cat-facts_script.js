@@ -14,3 +14,9 @@ const fetchCatFact = async () => {
 };
 
 catButton.addEventListener('click', fetchCatFact);
+
+catFact.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        fetchCatFact();
+    }   
+});
