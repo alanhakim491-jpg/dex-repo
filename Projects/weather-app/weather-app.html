@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Weather</title>
+    <title>A.M.H Weather</title>
     <link rel="stylesheet" href="weather-app_styles.css">
     <script src="weather-app_script.js" defer></script>
     <script src="https://cdn.tailwindcss.com"></script>
-</html>
+</head>
 <body>
     <div id="bckg-image" class="h-screen w-screen"></div>
-    <div class="h-40 w-80 bg-slate-300">
-
-    </div>
+    <main class="flex flex-col justify-center items-center h-screen w-screen absolute top-0 left-0">
+        <div class="h-4/6 w-2/4 mb-16 bg-slate-300 bg-opacity-60 rounded-lg shadow-lg p-6 flex flex-col justify-between">
+            <div class="text-center">
+                <h1 class="text-4xl text-blue-500 font-bold mb-4">A.M.H Weather ☀️☁️🌧️</h1>
+                <input id="city-input" type="text" placeholder="Enter city name" class="p-2 text-black rounded border-2 border-gray-400 w-2/3 shadow-lg">
+                <button id="get-weather-btn" class="ml-2 p-3 bg-blue-500 text-white rounded shadow-lg hover:bg-blue-600 transition duration-300 ease-in-ease-out">Get Weather</button>
+            </div>
+            <div id="weather-result" class=" m-auto text-center text-black text-xl hidden bg-slate-200 w-2/3 h-2/5 rounded-lg p-6"></div>
+            <div class="the-bottom flex flex-row justify-between items-center">
+                <h2 class="mt-3">Created by Alan M. Hakim</h2>
+                <div class="flex flex-row items-center gap-4">
+                    <button id="refresh-btn" class="mt-4 p-3 px-6 bg-green-500 text-white rounded shadow-lg hover:bg-green-600 transition-all duration-500 shadow-md">Refresh</button>
+                    <div class="temp-buttons flex flex-row relative items-center mt-4"> 
+                        <button id="celsius-btn" class="block w-full text-center p-3 bg-red-600 rounded-l shadow-lg hover:bg-slate-600 transition-all duration-500 shadow-md">°C</button>
+                        <button id="fahrenheit-btn" class="block w-full text-center p-3 bg-red-600 border-l-2 border-slate-300 rounded-r shadow-lg hover:bg-slate-600 transition-all duration-500 shadow-md">°F</button>   
+                    </div>
+                </div>    
+            </div>
+        </div>       
+    </main>   
 </body>
+</html>
