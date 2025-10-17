@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Better Calc</title>
+  <link rel="stylesheet" href="calc_styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="updatedCalc_script.js" defer></script>
+</head>
+<body>
+  <div class="flex justify-center items-center bg-orange-100 h-screen">
+    <div class="bg-gray-500 ml-2 mt-1 w-[435px] h-[800px] rounded-3xl p-4 grid justify-center align-center shadow-xl">
+      <h1 class="py-3 font-bold ml-1.5">My Better Calculator</h1>
+      <div class="bg-gray-300 h-20 w-[400px] rounded-md">
+        <p class="text-6xl mr-3 text-right py-2" id="shit-inside"></p>
+      </div>
+
+      <!-- Button rows -->
+      <div class="mt-4 text-lg font-bold">
+        <button class="input-button first-buttons bg-blue-500 text-white px-[38px] py-9 m-1 rounded-xl" data-value="C">C</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[30px] py-9 m-1 rounded-xl" data-value="Del">Del</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[38px] py-9 m-1 rounded-xl" data-value="Math.sqrt(">√</button>
+        <button class="input-button second-buttons bg-yellow-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="/">/</button>
+      </div>
+      <div class="mt-1 text-lg font-bold">
+        <button class="input-button first-buttons bg-blue-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="7">7</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="8">8</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[38px] py-9 m-1 rounded-xl" data-value="9">9</button>
+        <button class="input-button second-buttons bg-yellow-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="*">*</button>
+      </div>
+      <div class="mt-1 text-lg font-bold">
+        <button class="input-button first-buttons bg-blue-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="4">4</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="5">5</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[38px] py-9 m-1 rounded-xl" data-value="6">6</button>
+        <button class="input-button second-buttons bg-yellow-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="-">-</button>
+      </div>
+      <div class="mt-1 text-lg font-bold">
+        <button class="input-button first-buttons bg-blue-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="1">1</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="2">2</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[38px] py-9 m-1 rounded-xl" data-value="3">3</button>
+        <button class="input-button second-buttons bg-yellow-500 text-white px-[36px] py-9 m-1 rounded-xl" data-value="+">+</button>
+      </div>
+      <div class="mt-1 text-lg font-bold">
+        <button class="input-button first-buttons bg-blue-500 text-white px-[30px] py-9 m-1 rounded-xl" data-value=")">par</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[39px] py-9 m-1 rounded-xl" data-value="0">0</button>
+        <button class="input-button first-buttons bg-blue-500 text-white px-[41px] py-9 m-1 rounded-xl" data-value=".">.</button>
+        <button class="input-button second-buttons bg-yellow-500 text-white px-[36px] py-9 m-1 rounded-xl" data-value="=">=</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

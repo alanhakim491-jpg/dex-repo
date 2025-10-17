@@ -1,0 +1,39 @@
+<!DOCTYPE html
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Button</title> 
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const textButton = document.getElementById('text-changer');
+        const newText = document.getElementById('text-in-here');
+
+        textButton.addEventListener("click", function () {
+            let textDecider = Math.floor(Math.random() * 6);
+
+            if (textDecider === 0) {
+                newText.innerHTML = "Fart, and the world farts with you"
+            } else if (textDecider === 1) {
+                newText.innerHTML = "I am Groot"
+            } else if (textDecider === 2) {
+                newText.innerHTML = "I like turtles"
+            } else if (textDecider === 3) {
+                newText.innerHTML = "Hello, World!"
+            } else if (textDecider === 4) {
+                newText.innerHTML = "JavaScript is fun!"
+            } else if (textDecider === 5) {
+                newText.innerHTML = "I love coding!"
+            }
+        });
+    });
+    </script>
+</head>
+<body class="bg-orange-100">
+    <div class="flex flex-col items-center mt-20 bg-gray-400 px-5 py-5 rounded-lg w-[470px] m-auto">
+        <div id="text-in-here" class="m-4 text-2xl text-amber-400 font-bold">Try Me</div>
+        <button id="text-changer" class="m-5 p-4 rounded-lg text-lg font-bold bg-green-300 border-2 border-black">Click Me</button>
+    </div>
+</body>
+</html>

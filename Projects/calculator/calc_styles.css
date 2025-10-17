@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+
+.first-buttons:hover {
+    box-shadow: 2px 2px 5px black;
+    background-color: powderblue;
+}
+
+.second-buttons:hover {
+    box-shadow: 2px 2px 5px black;
+    background-color: orange;
+}
+
+#shit-inside {
+    font-family: "Handjet", sans-serif;
+}
