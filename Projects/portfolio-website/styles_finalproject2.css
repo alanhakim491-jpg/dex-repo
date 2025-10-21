@@ -12,9 +12,9 @@ body {
 }
 
 header > h1 {
-  font-size: 18vw;
+  font-size: 17vw;
   margin-left: 2%;
-  margin-top: 10px; 
+  margin-top: -30px; 
 }
 
 header > h1::first-letter {
@@ -29,7 +29,7 @@ header > h1::first-letter {
   background-position: right;
   position: relative;
   top: 5px;   /* will stick once 120px from top */
-  margin-top: -40%;
+  margin-top: -35%;
   margin-left: auto;
   margin-bottom: 300px;
   margin-right: 7%;
@@ -45,8 +45,8 @@ header > h1::first-letter {
   justify-content: start;
   list-style: none;
   margin-left: 3%;
-  margin-right: 15%;
-  margin-bottom: 10px;
+  margin-right: 14%;
+  margin-bottom: -20px;
   text-shadow: 3px 3px 3px black;
 }
 
@@ -71,6 +71,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 110%;
   height: 4px;
+  border-radius: 10px;
 }
 
 .me-desc { 
@@ -83,7 +84,7 @@ nav ul li a:hover::after {
 
 .me-desc p {
   font-size: 80%;
-  margin-top: 15px;
+  margin-top: -35px;
 }
 
 .me-desc h1 {
@@ -101,6 +102,7 @@ nav ul li a:hover::after {
   margin-top: -380px;           
   background-color: #FFE066;
   position: relative;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
   z-index: -111;
 }
 
@@ -128,7 +130,7 @@ nav ul li a:hover::after {
 #about-me {
   position: relative;
   z-index: 999;
-  margin-bottom: 7%;
+  margin-bottom: 10%;
 }
 
 .attributes {
@@ -142,6 +144,7 @@ nav ul li a:hover::after {
 summary:hover {
   color: #FFE066;
   cursor: pointer;
+  transition: color 0.5s;
 }
 
 summary {
@@ -159,6 +162,7 @@ dt, dl {
   background-color: #FFE066;
   margin-top: 50px;
   position: relative;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
   z-index: 111;
 }
 
@@ -191,6 +195,7 @@ dt, dl {
 
 .life-list > .item:hover {
   background-color: #FFE066;
+  color: black;
   transform: translateY(-10px) translateX(10px);
 }
 
@@ -215,12 +220,13 @@ dt, dl {
   background-color: #FFE066;
   margin-top: 150px;
   position: relative;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.3);
   z-index: 111;
 }
 
 #portfolio {
   padding: 50px 0;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
 }
 
 .work {
@@ -246,10 +252,12 @@ dt, dl {
 
 .links-list {
   list-style-type: none;
-  margin-left: -23px;
+  margin-left: -40px;
   margin-top: 30px;
   padding: 0;
+  padding-bottom: 20px;
   overflow: hidden;
+  z-index: 111;
 }
 
 .links-list li{
@@ -261,6 +269,7 @@ dt, dl {
 .links-list li a:hover {
   color: #FFE066;
   cursor: pointer;
+  transition: color 0.5s;
 }
 
 .works {
@@ -385,4 +394,5 @@ input[type="submit"] {
   background-color: #00316E;
   border-radius: 10px;
   font-size: 100%;
+  cursor: pointer;
 }
