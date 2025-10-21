@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where's Pamela?</title>
+    <script src="wheres-pamela_script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+body {
+    font-family: "DynaPuff", cursive;
+}
+</style>
+</head>
+<body class="h-screen w-screen">
+    <header class="h-1/4 w-full">
+        <div class="cat-header bg-rose-400 text-sky-200 text-center h-full w-full flex flex-col justify-center items-center shadow-lg">
+            <h1 class="text-5xl py-2 pb-7">Where is Pamela? 🤸🏻‍♀️</h1>
+            <h2 class="text-2xl pb-4">Its almost impossible to find her :D, just a heads up before we start</h2>
+            <p>Try to figure it out, if you even can!</p>
+        </div>
+    </header>
+    <main class="h-3/5 w-full">
+        <div class="main-container bg-sky-300 h-full w-full flex flex-row justify-center">
+            <div class="cat-content text-center flex flex-col justify-center items-center gap-4">
+                <h1 class="text-4xl font-bold mb-6">Where do you think Pamela is?</h1>
+                <div class="how-many flex flex-row justify-center items-center gap-8">
+                    <input type="radio" id="option1" name="pamela-location" value="Watching Winx">
+                    <label for="option1" class="text-2xl">Watching Winx</label>
+                    <input type="radio" id="option2" name="pamela-location" value="Tiktok scrolling">
+                    <label for="option2" class="text-2xl">Tiktok scrolling</label    >
+                    <input type="radio" id="option3" name="pamela-location" value="Online Shopping">
+                    <label for="option3" class="text-2xl">Online Shopping</label>
+                    <input type="radio" id="option4" name="pamela-location" value="Sleeping">
+                    <label for="option4" class="text-2xl">Sleeping</label> 
+                </div>  
+                <div class="pamela-answer bg-slate-200 h-32 w-96 my-6 rounded-xl flex flex-col justify-center border-4 border-rose-400 shadow-lg">
+                    <p class="text-2xl px-4 py-6" id="answer-display">Your answer will appear here!</p> 
+                </div>  
+                <form class="flex flex-row gap-4 items-center" id="pamela-form">
+                    <input type="submit" class="bg-rose-400 text-slate-100 text-md px-4 py-2 rounded-lg shadow-lg hover:bg-rose-500 cursor-pointer" id="submit-known" value="Submit">
+                    <input type="reset" class="bg-red-300 text-slate-100 text-md px-4 py-2 rounded-lg shadow-lg hover:bg-red-400 cursor-pointer" id="reset-known" value="Reset">
+                </form>       
+            </div>
+        </div>    
+    </main>
+    <footer class="h-[15%] w-full bg-red-300">
+        <div class="cat-footer text-center py-8 text-blue-400">
+            <p class="text-lg">Created by Alan M. Hakim</p>
+            <p class="text-sm">Data provided by <a class="underline" href="https://catfact.ninja/" target="_blank" rel="noopener noreferrer">catfact.ninja</a></p>
+        </div>
+    </footer>
+</body>
+</html>   

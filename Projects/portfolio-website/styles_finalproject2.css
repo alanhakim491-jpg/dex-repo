@@ -24,7 +24,7 @@ header > h1::first-letter {
 #header {
   width: 410px;
   height: 70vh;
-  background-image: url("code/myPictures/IMG_7705.png");
+  background-image: url("C:/Users/Alan M/OneDrive/Desktop/Code/myPictures/IMG_7705.jpg");
   background-size: cover;
   background-position: right;
   position: relative;
@@ -81,8 +81,13 @@ nav ul li a:hover::after {
   font-size: 2vw;
 }
 
+.me-desc p {
+  font-size: 80%;
+  margin-top: 15px;
+}
+
 .me-desc h1 {
-  font-size: 115%;
+  font-size: 111%;
   margin-top: 20px;
 }
 

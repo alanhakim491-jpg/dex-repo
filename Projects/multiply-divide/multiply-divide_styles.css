@@ -1,0 +1,36 @@
+.the-box {
+    width: 50%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: solid;
+    border-width: 2px;
+}
+
+.first-num {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.second-num {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    margin-left: 10px;
+}
+
+.operation-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+#result-display {
+    margin-left: 10px;
+    margin-top: 5px;
+}
