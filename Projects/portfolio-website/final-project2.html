@@ -33,87 +33,72 @@
   </div>
   <div class="section-bar"></div>
   <section id="about-me">
-    <div class="me">
-      <h1>About Me</h1>
-      <br>
-      <p>For the majority of my life, I had considered myself a student of the life sciences, with my main focus of passion being the fields of chemistry and physics, and even ended up choosing my major at first in chemistry. However, with the passage of time, unexpectedly, I had come to realize that perhaps this really isnt what I want or where I see myself. Cue September 2025, when I first decided to learn front-end, HTML is what I started with, and ever since then I've been completely immersed and obsessed with the world of web development, web design, and currently throwing my plans towards even UI and UX.</p>
-    </div>	
-    <div class="attributes">
-      <div class="sum">
-        <details style="flex-basis:50px">
-          <summary>Skills</summary>
-	        <br><br>
-	        <p style="color:#FFD700; font-size:20px;">Technical Skills</p>
-	        <br>
-          <dl>
-	          <dt style="text-decoration:underline;">HTML</dt>
-            <dd>Codédex Certificate</dd>
-	          <br>
-	          <dt style="text-decoration:underline;">CSS</dt>
-	          <dd>Codédex Certificate</dd>
-            <br>
-            <dt style="text-decoration:underline;">JavaScript</dt>
-	          <dd>Codédex Certificate</dd>
-            <br>
-            <dt style="text-decoration:underline;">ECMAScript</dt>
-	          <dd>Codédex Certificate</dd>
-            <br>
-            <dt style="text-decoration:underline;">Git & GitHub</dt>
-            <dd>Codédex</dd>
-	          <br>
-	          <dt style="text-decoration:underline;">Tailwind CSS</dt>
-            <br>
-	          <dt style="text-decoration:underline;">Bash/Command Prompt</dt>
-	        </dl>
-        </details>
+    <div class="me-and-cat">
+      <div class="me">
+        <h1>About Me</h1>
+        <br>
+        <p>For the majority of my life, I had considered myself a student of the life sciences, with my main focus of passion being the fields of chemistry and physics, and even ended up choosing my major at first in chemistry. However, with the passage of time, unexpectedly, I had come to realize that perhaps this really isnt what I want or where I see myself. Cue September 2025, when I first decided to learn front-end, HTML is what I started with, and ever since then I've been completely immersed and obsessed with the world of web development, web design, and currently throwing my plans towards even UI and UX.<br><span style="color:#FFE066">I also like cats, here's my cat!</span></p>
       </div>
-      <div class="sum">
-        <details style="flex-basis:50px">
-	        <summary>Experience</summary>
-          <br><br>
-	        <p style="color:#FFD700; font-size:20px;">Past</p>
-	        <br>
-	        <dl>
-	          <dt style="text-decoration:underline;">Pharmadex (06/2017-07/2017)</dt>
-	          <dd>Lab Intern</dd>
-	          <br>
-	          <dt style="text-decoration:underline;">Hakim Co (08/2027-09/2017)<dt>
-	          <dd>Employee</dd>
-	          <br>
-	          <dt style="text-decoration:underline;">Hakim Co (06/2021-09/2025)<dt>
-	          <dd>Operations Manager</dd>
-	          <br>
-	        </dl>
-	      </details>
-	    </div>
-      <div class="sum">
-    	  <details>
-	        <summary>Education</summary><br>
-	        <br>
-	        <p style="color:#FFD700; font-size:20px;">Where?</p>
-	        <br>
-          <dl>
-	          <dt style="text-decoration:underline;">IC Ras Beirut</dt>
-	          <dd>IB certificate (2019)</dd>
-	          <br>
-	          <dt style="text-decoration:underline;">AUB</dt>
-            <dd>BS in Chemistry (2019-2022)</dd>
-	          <br>
-	          <dt style="text-decoration:underline;">Web Dev</dt>
-	          <dd>Codédex / W3Schools</dd>
-            <dt style="text-decoration:underline;">LU</dt>
-            <dd>BS in Pharmacy (2025-present)</dd>
-	        </dl>
-	      </details>
-	    </div>
- 	  </div>
+      <img src="C:\Users\Alan M\Downloads\Phone Link\8941B6A0-EE04-48C2-A4D9-07E373177FB5.JPG" alt="this-my-cat" class="my-cat">
+    </div>
+    <div class="things-done">
+      <div class="options">
+        <h2 class="options-links active-links text-3xl text-black text-center" onclick="openTab('skills')">Skills</h2>
+        <h2 class="options-links text-3xl text-black text-center" onclick="openTab('experience')">Experience</h2>
+        <h2 class="options-links text-3xl text-black text-center" onclick="openTab('education')">Education</h2>
+      </div>
+      <div class="inside-options">
+        <div class="options-content active-tab" id="skills">
+          <ul class="grid grid-cols-2 gap-y-12 ml-96 mr-28 text-xl">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Tailwind CSS</li>
+            <li>Git / GitHub</li>
+            <li>Bash / Command Prompt</li>
+          </ul>
+        </div>
+        <div class="options-content" id="experience">
+          <ul class="grid grid-cols-3 gap-y-12 ml-32 mr-10">
+            <li class="flex flex-col">
+              <p><span>Operations Manager</span></p>
+              <p>Hakim Co 2021-2025</p>
+            </li>
+            <li class="flex flex-col">
+              <p><span>Employee</span></p>
+              <p>Hakim Co 07/2017-08/2017</p>
+            </li>            
+            <li class="flex flex-col">
+              <p><span>Lab Intern</span></p>
+              <p>Pharmadex 06/2017-07/2017</p>
+            </li>
+          </ul>
+        </div>
+        <div class="options-content" id="education">
+          <ul class="grid grid-cols-3 gap-y-20 ml-32">
+            <li class="flex flex-col">
+              <p><span>Bachelors in Pharmacy</span></p>
+              <p>Lebanese Univeristy 2025-2031</p>
+            </li>
+            <li class="flex flex-col">
+              <p><span>Bachelors in Chemistry</span></p>
+              <p>AUB 2019-2022</p>
+            </li> 
+            <li class="flex flex-col">
+              <p><span>International Baccaleaurate</span></p>
+              <p>International College 2019</p>
+            </li>           
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
   <div class="section-bar2"></div>
   <section id="my-life">
     <div class="life">
       <h1>My Life</h1>
 	    <br>
-	    <h3>Aside from Web and Work, there are other parts to my life</h3>
+	    <h3 class="text-xl">Aside from Web and Work, there are other parts to my life</h3>
 	    <div class="life-list">
 	      <div class="item">
 	        <i class="fa-solid fa-music"></i>
@@ -146,42 +131,47 @@
         <div class="works">
 	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\resto_menu.png">
 	        <div class="caption-over">
-	          <h3>Restaurant Menu</h3>
+	          <h3 class="text-lg">Restaurant Menu</h3>
 	          <p>My first HTML project, a simple restaurant menu. pure raw HTML with internal CSS within the head</p>
 	        </div>
         </div>
         <div class="works">
 	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\portfolio.png">
 	        <div class="caption-over">
-	          <h3>Personal Site</h3>
+	          <h3 class="text-lg">Personal Site</h3>
 	          <p>This is literally the exact page you're on right now!</p>
 	        </div>
         </div>
         <div class="works">
 	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\CV_pic.png">
 	        <div class="caption-over">
-	          <h3>Personal Resume</h3>
+	          <h3 class="text-lg">Personal Resume</h3>
 	          <p>A CV template I worked on, helped me practice media queries for responsiveness across various screen sizes, along with CSS Grid and Flexbox</p>
 	        </div>
         </div>
       </div>
-      <br><hr style="color:#FFE066"><br>
+      <br><hr><br>
     </div>
   </section>
   <footer>
     <div id="contact">
       <div class="left-side">
-        <h3>Contact Me</h3>
-        <a href="tel:"><i class="fa-solid fa-phone"></i>+961 71 558810</a>
-        <a href="mailto:"><i class="fa-solid fa-envelope"></i>alanhakim491@gmail.com</a>
+        <h3 class="font-bold text-lg">Contact Me</h3>
+        <div class="contact-info flex flex-row gap-4">
+        <a href="tel:"><i class="fa-solid fa-phone"></i>: +961 71 558810</a>
+        <a href="mailto:"><i class="fa-solid fa-envelope"></i>: alanhakim491@gmail.com</a>
+        </div>
         <hr>
-        <h3>Socials</h3>
+        <h3 class="font-bold text-lg">Socials</h3>
         <a href="https://www.instagram.com/am.hakim13/" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-instagram my-icons" id="insta-gram"></i>
         </a>
         <a href="https://www.linkedin.com/in/alan-mounir-hakim-b1b72721a/" target="_blank">
-          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-linkedin my-icons" id="linked-in"></i>
         </a>
+        <a href="https://github.com/alanhakim491-jpg" target="_blank">
+          <i class="fa-brands fa-square-github my-icons" id="git-hub"></i>
+        </a>   
         <br><br>
         <a href="C:\Users\Alan M\OneDrive\Desktop\CVs and Work\CVs\Alan Hakim CV_U.pdf" target="_blank" class="button">See Me</a>
       </div>
@@ -195,5 +185,27 @@
       </div>
     </div>
   </footer>
+<script>
+  const optionsLinks = document.getElementsByClassName('options-links');
+  const optionsContents = document.getElementsByClassName('options-content');
+
+  function openTab(tabName) {
+    // Remove active class from all tabs
+    for (let link of optionsLinks) {
+      link.classList.remove('active-links');
+    }
+
+    // Hide all content sections
+    for (let content of optionsContents) {
+      content.classList.remove('active-tab');
+    }
+
+    // Add active class to the clicked tab
+    event.currentTarget.classList.add('active-links');
+
+    // Show the corresponding content
+    document.getElementById(tabName).classList.add('active-tab');
+  }
+</script>
 </body>
 </html>
