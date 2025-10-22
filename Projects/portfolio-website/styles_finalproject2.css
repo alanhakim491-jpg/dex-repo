@@ -219,6 +219,10 @@ nav ul li a:hover::after {
   z-index: 111;
 }
 
+#my-life {
+  margin-bottom: 8%;
+}
+
 .life {
   margin-left: 50px;
   margin-top: 5%;
