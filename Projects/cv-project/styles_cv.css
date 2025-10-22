@@ -60,13 +60,13 @@
 .section-bar > h1 {
   font-size: 50px;
   color: #2A2416;
-  margin-left: 15%;
+  margin-left: 12%;
   padding-top: 50px;
 }
 
 .section-bar > p {
   font-size: 19px;
-  padding-left: 15%;
+  padding-left: 12%;
   margin-bottom: 20%;
 }
 
@@ -74,25 +74,25 @@
   font-size: 30px;
   font-weight: bold;
   margin-top: 10%;
-  margin-left: 15%;
+  margin-left: 12%;
 }
 
 .miniflex-cont > hr {
-  width: 70%;
-  margin-left: 15%;
+  width: 75%;
+  margin-left: 12%;
   border: 1px solid black;
 }
 
 .miniflex-cont > p {
-  max-width: 70%;
-  margin-left: 15%;
+  max-width: 75%;
+  margin-left: 12%;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 30% 60%;
   row-gap: 40px;
-  margin-left: 15%;
+  margin-left: 12%;
   align-items: start;
 }
 
@@ -104,7 +104,7 @@
   display: grid; 
   grid-template-columns: 1fr 1fr;
   row-gap: 5%;
-  margin-left: 40%;
+  margin-left: 38%;
   margin-right: 5%;
 }
 
