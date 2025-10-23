@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: #0F172A;
-  color: #FDF6E3;
+  background-color: #FDF6E3;
+  color: #0F172A;
 }
 
 /* Home page */
@@ -32,11 +32,11 @@ header > h1::first-letter {
   top: 5px;
   margin-top: -35%;
   margin-left: auto;
-  margin-bottom: 300px;
+  margin-bottom: 296px;
   margin-right: 7%;
   border: solid 15px #EF4444;
   border-radius: 80px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: inset 2px 2px 5px black;
   z-index: 111;
 }
 
@@ -44,7 +44,7 @@ header > h1::first-letter {
 .me-desc { 
   position: absolute;
   top: 85px;      
-  right: 28px;    
+  right: 30px;    
   margin: 10px; 
   font-size: 2vw;
 }
@@ -54,9 +54,19 @@ header > h1::first-letter {
   margin-top: -35px;
 }
 
+#toggle-theme {
+  box-shadow: 5px 5px #EF4444;
+  transition: transform 0.1s;
+}
+
+#toggle-theme:hover{
+  transform: translateX(5px) translateY(5px);
+  box-shadow: none;
+}
+
 .me-desc h1 {
   font-size: 105%;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .me-desc h1 span {
@@ -82,7 +92,6 @@ header > h1::first-letter {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   transform: translateY(-8px) scale(1.02);
   perspective: 1000px;
-
 }
 
 .tools, #navbar, li {
@@ -92,13 +101,12 @@ header > h1::first-letter {
   list-style: none;
   margin-left: 2%;
   margin-right: 12%;
-  background-color: #1E293B;
   border-radius: 5px;
   padding: 3px 0;
 }
 
 .tools, #navbar, li, a {
-  color: #FDF6E3;
+  color: #1E293B;
   text-decoration: none;
   font-size: 115%;
   position: relative;
@@ -108,7 +116,7 @@ header > h1::first-letter {
   content: '';
   width: 0;
   height: 3px;
-  background: #FF4444;
+  background: #EF4444;
   position: absolute;
   left: 1%;
   bottom: -1px;
@@ -119,6 +127,13 @@ header > h1::first-letter {
   width: 75%;
   height: 4px;
   border-radius: 10px;
+}
+
+.dark .tools,
+.dark #navbar,
+.dark #navbar li {
+  background-color: #1E293B;
+  color: #FDF6E3;
 }
 
 /* About page */
@@ -174,7 +189,7 @@ header > h1::first-letter {
   margin-top: 11%;
   border: 2px solid #EF4444;
   border-radius: 20px;
-  box-shadow: 5px 5px #FF4444;
+  box-shadow: 5px 5px #EF4444;
   transition: transform 0.1s;
 }
 
@@ -378,7 +393,6 @@ header > h1::first-letter {
 }
 
 .life-list > .item {
-  background-color: #1E293B;
   padding: 40px;
   border-radius: 10px;
   border-right: 40px;
@@ -387,10 +401,17 @@ header > h1::first-letter {
   transition: background 0.5s, transform 0.5s;
 }
 
+.dark.life-list > .item {
+  background-color: #1E293B;
+}
+
 .life-list > .item:hover {
   background-color: #EF4444;
-  color: #1E293B;
   transform: translateY(-10px) translateX(10px);
+}
+
+.dark.life-list > .item:hover {
+  color: #F5EAD0;
 }
 
 .life-list > .item > a {
@@ -415,13 +436,13 @@ footer {
 }
 
 #contact {
-  color: #1E293B;
+  color: #F5EAD0;
   margin-top: 10px;
   display: flex;
 }
 
 .left-side {
-  color: #1E293B;
+  color: #F5EAD0;
   text-align: left;
   margin-left: 5%;
   margin-top: 8px;
@@ -432,15 +453,7 @@ footer {
   flex-basis: 55%;
 }
 
-.left-side hr {
-  border: none;
-  height: 2px;
-  background-color: #1E293B;
-  margin: 18px 0;
-}
-
 .left-side > a {
-  color: #1E293B;
   text-align: left;
 }
 
@@ -453,7 +466,7 @@ footer {
 }
 
 .button {
-  border: 3px solid #1E293B;
+  border: 3px solid #F5EAD0;
   padding: 3px 5px;
   border-radius: 10px;
 }
@@ -464,7 +477,7 @@ footer {
 
 .my-icons {
   font-size: 25px;
-  color: #1E293B;
+  color: #F5EAD0;
 }
 
 #insta-gram, #linked-in, #git-hub {
@@ -473,18 +486,6 @@ footer {
 
 #insta-gram:hover, #linked-in:hover, #git-hub:hover {
   transform: scale(1.2);
-}
-
-#insta-gram {
-  color: #0F172A;
-}  
-
-#linked-in {
-  color: #0F172A;
-}
-
-#git-hub {
-  color: #0F172A;
 }
 
 .right-side {
@@ -499,18 +500,9 @@ footer {
 form input, form textarea {
   width: 80%;
   outline: none;
-  background: #1E293B;
+  background: #F5EAD0;
   margin-top: 15px;
   padding: 8px;
   border-radius: 6px;
-  color: white;
-}
-
-input[type="submit"] {
-  width: 40%;
-  padding: 2% 3%;
-  background-color: #0F172A;
-  border-radius: 10px;
-  font-size: 100%;
-  cursor: pointer;
+  color: black;
 }
