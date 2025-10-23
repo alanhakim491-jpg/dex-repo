@@ -14,15 +14,6 @@
     <div class="flex sm:flex-col items-center">
       <header>
         <h1>Alan Hakim</h1>
-        <nav class="tools">
-          <ul>
-            <li><a href="#home"><strong>Home</strong></a></li>
-            <li><a href="#about-me"><strong>About</strong></a></li>
-            <li><a href="#my-life"><strong>Life</strong></a></li>
-            <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
-            <li><a href="#contact"><strong>Contact</strong></a></li>
-          </ul>
-        </nav>
         <div class="me-desc">
           <p>Student at Codédex | HTML CSS JS</p>
           <h1>My name is <span>Alan Hakim</span>, Lebanese. <br> Glad to have you!</h1>
@@ -31,62 +22,73 @@
       <div id="header"></div>
     </div>
   </div>
-  <div class="section-bar"></div>
+  <div class="section-bar">
+    <nav class="tools">
+      <ul id="navbar">
+        <li><a href="#home"><strong>Home</strong></a></li>
+        <li><a href="#about-me"><strong>About</strong></a></li>
+        <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
+        <li><a href="#my-life"><strong>Life</strong></a></li>
+        <li><a href="#contact"><strong>Contact</strong></a></li>
+      </ul>
+    </nav>
+  </div>
   <section id="about-me">
     <div class="me-and-cat">
       <div class="me">
         <h1>About Me</h1>
         <br>
-        <p>For the majority of my life, I had considered myself a student of the life sciences, with my main focus of passion being the fields of chemistry and physics, and even ended up choosing my major at first in chemistry. However, with the passage of time, unexpectedly, I had come to realize that perhaps this really isnt what I want or where I see myself. Cue September 2025, when I first decided to learn front-end, HTML is what I started with, and ever since then I've been completely immersed and obsessed with the world of web development, web design, and currently throwing my plans towards even UI and UX.<br><span style="color:#FFE066">I also like cats, here's my cat!</span></p>
+        <p>For the majority of my life, I had considered myself a student of the life sciences, with my main focus of passion being the fields of chemistry and physics, and even ended up choosing my major at first in chemistry. However, with the passage of time, unexpectedly, I had come to realize that perhaps this really isn't what I want or where I see myself. Cue September 2025, when I first decided to learn front-end, HTML is what I started with, and ever since then I've been completely immersed and obsessed with the world of web development, web design, and currently throwing my plans towards even UI and UX.<br><span style="color:#FF4444">I also like cats, here's my cat!</span></p>
       </div>
-      <img src="C:\Users\Alan M\Downloads\Phone Link\8941B6A0-EE04-48C2-A4D9-07E373177FB5.JPG" alt="this-my-cat" class="my-cat">
+      <a href=https://en.wikipedia.org/wiki/Turkish_Angora target="_blank"><img src="C:\Users\Alan M\Downloads\Phone Link\8941B6A0-EE04-48C2-A4D9-07E373177FB5.JPG" alt="this-my-cat" class="my-cat"></a>
     </div>
+    <hr class="mt-6">
     <div class="things-done">
       <div class="options">
-        <h2 class="options-links active-links text-3xl text-black text-center" onclick="openTab('skills')">Skills</h2>
-        <h2 class="options-links text-3xl text-black text-center" onclick="openTab('experience')">Experience</h2>
-        <h2 class="options-links text-3xl text-black text-center" onclick="openTab('education')">Education</h2>
+        <h2 class="options-links active-links text-3xl text-center" onclick="openTab('skills')">Skills <i class="fa-solid fa-code"></i></h2>
+        <h2 class="options-links text-3xl text-center" onclick="openTab('experience')">Experience <i class="fa-solid fa-briefcase"></i></h2>
+        <h2 class="options-links text-3xl text-center" onclick="openTab('education')">Education <i class="fa-solid fa-school"></i></h2>
       </div>
       <div class="inside-options">
         <div class="options-content active-tab" id="skills">
-          <ul class="grid grid-cols-2 gap-y-12 ml-80 mr-28 text-xl">
-            <li class="text-black hover:translate-x-1 duration-300 ease-in-ease-out bg-[#FFE006] w-32 h-11 py-2 px-8 rounded-3xl">HTML</li>
-            <li class="text-black hover:translate-x-1 duration-300 ease-in-ease-out bg-[#FFE006] w-28 h-11 py-2 px-8 rounded-3xl">CSS</li>
-            <li class="text-black hover:translate-x-1 duration-300 ease-in-ease-out bg-[#FFE006] w-44 h-11 py-2 px-6 rounded-3xl">JavaScript</li>
-            <li class="text-black hover:translate-x-1 duration-300 ease-in-ease-out bg-[#FFE006] w-56 h-11 py-2 px-8 rounded-3xl">Tailwind CSS</li>
-            <li class="text-black hover:translate-x-1 duration-300 ease-in-ease-out bg-[#FFE006] w-48 h-11 py-2 px-6 rounded-3xl">Git / GitHub</li>
-            <li class="text-black hover:translate-x-1 duration-300 ease-in-ease-out bg-[#FFE006] w-96 h-11 py-2 px-8 rounded-3xl">Bash / Command Prompt</li>
+          <ul class="grid grid-cols-2 gap-y-12 ml-72 mr-28 text-xl">
+            <li class="text-black text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[143px] h-16 py-4 px-5 rounded-3xl"><a href="C:\Users\Alan M\OneDrive\Desktop\CVs and Work\Certificates\HTML Certificate.pdf" target="_blank"><i class="fa-brands fa-html5"></i>HTML</a></li>
+            <li class="text-black text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[125px] h-16 py-4 px-5 rounded-3xl"><a href="C:\Users\Alan M\OneDrive\Desktop\CVs and Work\Certificates\CSS Certificate.pdf" target="_blank"><i class="fa-brands fa-css3-alt"></i>CSS</a></li>
+            <li class="text-black hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[196px] h-16 py-4 px-6 rounded-3xl"><i class="fa-brands fa-square-js"></i></i>JavaScript</li>
+            <li class="text-black hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[206px] h-16 py-4 px-6 rounded-3xl">Tailwind CSS</li>
+            <li class="text-black hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[246px] h-16 py-4 px-5 rounded-3xl"><i class="fa-brands fa-square-git"></i>Git / GitHub<i class="fa-brands fa-square-github"></i></li>
+            <li class="text-black hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[23rem] h-16 py-4 px-6 rounded-3xl"><i class="fa-solid fa-terminal"></i>Bash / Command Prompt</li>
           </ul>
         </div>
         <div class="options-content" id="experience">
-          <ul class="grid grid-cols-3 gap-y-12 ml-32 mr-10">
-            <li class="flex flex-col">
+          <ul class="grid grid-cols-3 gap-y-12 ml-32 mr-20">
+            <li class="flex flex-col px-3 py-2">
               <p><span>Operations Manager</span></p>
-              <p>Hakim Co 2021-2025</p>
+              <p class="text-[#FDF6E3]">Hakim Co 2021-2025</p>
             </li>
-            <li class="flex flex-col">
+            <li class="flex flex-col px-3 py-2">
               <p><span>Employee</span></p>
-              <p>Hakim Co 07/2017-08/2017</p>
+              <p class="text-[#FDF6E3]">Hakim Co 07/2017-08/2017</p>
             </li>            
-            <li class="flex flex-col">
+            <li class="flex flex-col px-3 py-2">
               <p><span>Lab Intern</span></p>
-              <p>Pharmadex 06/2017-07/2017</p>
+              <p class="text-[#FDF6E3]">Pharmadex 06/2017-07/2017</p>
             </li>
           </ul>
         </div>
         <div class="options-content" id="education">
-          <ul class="grid grid-cols-3 gap-y-20 ml-32">
-            <li class="flex flex-col">
+          <ul class="grid grid-cols-3 gap-y-20 ml-28 mr-20">
+            <li class="flex flex-col px-3 py-2">
               <p><span>Bachelors in Pharmacy</span></p>
-              <p>Lebanese Univeristy 2025-2031</p>
+              <p class="text-[#FDF6E3]">Lebanese Univeristy 2025-2031</p>
             </li>
-            <li class="flex flex-col">
+            <li class="flex flex-col px-3 py-2">
               <p><span>Bachelors in Chemistry</span></p>
-              <p>AUB 2019-2022</p>
+              <p class="text-[#FDF6E3]">AUB 2019-2022</p>
             </li> 
-            <li class="flex flex-col">
+            <li class="flex flex-col px-3 py-2">
               <p><span>International Baccaleaurate</span></p>
-              <p>International College 2019</p>
+              <p class="text-[#FDF6E3]">International College 2019</p>
             </li>           
           </ul>
         </div>
@@ -94,6 +96,43 @@
     </div>
   </section>
   <div class="section-bar2"></div>
+  <section id="portfolio">
+    <div class="work">
+      <h1 class="work-title">My Work</h1>
+      <br>
+      <h3 class="text-xl">Here you may find what I've done <span class="text-red-500">(so far!)</span></h3>
+      <div class="list-work grid sm:grid-cols-1 lg:grid-cols-3 gap-7">
+        <div class="works">
+	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\resto_menu.png">
+	        <div class="caption-over">
+	          <h3 class="text-lg"><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\restaurant_menu.html" target="_blank">Restaurant Menu</a></h3>
+	          <p>My first HTML project, a simple restaurant menu. pure raw HTML with internal CSS within the head</p>
+            <br>
+            <h2 class="font-bold text-lg text-[#FDF6E3] bg-slate-900 px-4 py-1 rounded-lg hover:scale-110 duration-300"><a href="https://github.com/alanhakim491-jpg/dex-repo/blob/main/Projects/restaurant_menu.html" target="_blank">HTML | CSS</a></h2>
+	        </div>
+        </div>
+        <div class="works">
+	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\weather-pic.png">
+	        <div class="caption-over">
+	          <h3 class="text-lg"><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\weather-app\weather-app.html" target="_blank">Weather App</a></h3>
+	          <p>My rendition of a weather app</p>
+            <br>
+            <h2 class="font-bold text-lg text-[#FDF6E3] bg-slate-900 px-4 py-1 rounded-lg hover:scale-110 duration-300"><a href="https://github.com/alanhakim491-jpg/dex-repo/tree/main/Projects/weather-app" target="_blank">HTML | CSS | JS | Tailwind CSS</a></h2>
+	        </div>
+        </div>
+        <div class="works">
+	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\cat-app_pic.png">
+	        <div class="caption-over">
+	          <h3 class="text-lg"><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\cat-app\cat-facts.html" target="_blank">Cat App</a></h3>
+	          <p>A fun app that generates random cat facts upon request. My first practical use of JavaScript!</p>
+            <br>
+            <h2 class="font-bold text-lg text-[#FDF6E3] bg-slate-900 px-4 py-1 rounded-lg hover:scale-110 duration-300"><a href="https://github.com/alanhakim491-jpg/dex-repo/tree/main/Projects/cat-app" target="_blank">HTML | CSS | JS | Tailwind CSS</a></h2>
+	        </div>
+        </div>
+      </div>
+      <br><hr><br>
+    </div>
+  </section>
   <section id="my-life">
     <div class="life">
       <h1>My Life</h1>
@@ -101,55 +140,21 @@
 	    <h3 class="text-xl">Aside from Web and Work, there are other parts to my life</h3>
 	    <div class="life-list">
 	      <div class="item">
-	        <i class="fa-solid fa-music"></i>
-	        <h2>Music</h2>
+	        <a href="https://www.instagram.com/stories/highlights/17894849719787674/" target="_blank"><i class="fa-solid fa-music text-red-500 hover:text-slate-800"></i></a>
+	        <a href="https://www.instagram.com/stories/highlights/17967783934676364/" target="_blank"><h2 class="text-[32px] mb-4 -mt-2">Music</h2></a>
 	        <p>Bass player and active member in the Lebanese music scene, bands of mine include Lazeez and 2 by Four</p>
 	      </div>
 	      <div class="item">
-	        <i class="fa-solid fa-dumbbell"></i>
-	        <h2>Sports</h2>
+	        <a href="https://www.instagram.com/stories/highlights/17922776065901037/" target="_blank"><i class="fa-solid fa-dumbbell text-red-500 hover:text-slate-800"></i></a>
+	        <a href="https://www.instagram.com/stories/highlights/18216802000225988/" target="_blank"><h2 class="text-[32px] mb-4 -mt-2">Sports</h2></a>
 	        <p>Adrenaline junkie and gym-goer, sports of mine include snowboarding, parkour, swimming, olympic weightlifting and powerlifting</p>
 	      </div>
 	      <div class="item">
-	        <i class="fa-solid fa-tree"></i>
+	        <a href="https://www.instagram.com/stories/highlights/17867436469864169/" target="_blank"><i class="fa-solid fa-tree text-red-500 hover:text-slate-800"></i></a>
 	        <h2>Outdoors</h2>
 	        <p>Hiking, camping, cliff jumping, and all kinds of adventures, the outdoors is what id consider my favorite part of this world</p>
 	      </div>
 	    </div>
-    </div>
-  </section>
-  <section id="portfolio">
-    <div class="work">
-      <h1 class="work-title">My Work</h1>
-      <ul class="links-list">
-	      <li><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\restaurant_menu.html" target="_blank">Click Me</a></li>
-	      <li><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\portfolio-website\final-project2.html" target="_blank">No Me!</a></li>
-	      <li><a href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\cv-project\cv.html" target="_blank">ME! ME!</a></li>
-      </ul>
-      <div class="list-work grid sm:grid-cols-1 lg:grid-cols-3 gap-7">
-        <div class="works">
-	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\resto_menu.png">
-	        <div class="caption-over">
-	          <h3 class="text-lg">Restaurant Menu</h3>
-	          <p>My first HTML project, a simple restaurant menu. pure raw HTML with internal CSS within the head</p>
-	        </div>
-        </div>
-        <div class="works">
-	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\portfolio.png">
-	        <div class="caption-over">
-	          <h3 class="text-lg">Personal Site</h3>
-	          <p>This is literally the exact page you're on right now!</p>
-	        </div>
-        </div>
-        <div class="works">
-	        <img src="C:\Users\Alan M\OneDrive\Desktop\Code\myPictures\CV_pic.png">
-	        <div class="caption-over">
-	          <h3 class="text-lg">Personal Resume</h3>
-	          <p>A CV template I worked on, helped me practice media queries for responsiveness across various screen sizes, along with CSS Grid and Flexbox</p>
-	        </div>
-        </div>
-      </div>
-      <br><hr><br>
     </div>
   </section>
   <footer>
@@ -157,8 +162,8 @@
       <div class="left-side">
         <h3 class="font-bold text-lg">Contact Me</h3>
         <div class="contact-info flex flex-row gap-4">
-        <a href="tel:"><i class="fa-solid fa-phone"></i>: +961 71 558810</a>
-        <a href="mailto:"><i class="fa-solid fa-envelope"></i>: alanhakim491@gmail.com</a>
+          <a href="tel:"><i class="fa-solid fa-phone"></i>: +961 71 558810</a>
+          <a href="mailto:"><i class="fa-solid fa-envelope"></i>: alanhakim491@gmail.com</a>
         </div>
         <hr>
         <h3 class="font-bold text-lg">Socials</h3>
