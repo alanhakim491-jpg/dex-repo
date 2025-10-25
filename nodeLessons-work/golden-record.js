@@ -1,0 +1,5 @@
+console.log('I love spiders, and so should you!')
+console.log(' ||  || ')
+console.log(' \\()// ')
+console.log('//(__)\\')
+console.log('||    ||')
