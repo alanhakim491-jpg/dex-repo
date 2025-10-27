@@ -3,7 +3,6 @@ const http = require('http')
 const server = http.createServer((request, response) => {
     let statusCode = 200;
     let contentType = 'text/html; charset=utf-8';
-    let contentType2 = 'text/plain; charset=utf-8';
     let content = '';
     let content2 = '';
     const alienCalls = ['FOURRR ARMSSS!!', 'HUMUNGOUSARRRR!!', 'GHOSTFREAK!', 'CLOCKVURK!', 'ECHO ECHO!', 'ALIEN X!']
