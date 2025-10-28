@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="/routed-portfolio_script.js"></script>
+    <link rel="icon" type="image/png" href="C:\Users\Alan M\OneDrive\Desktop\Code\Projects\portfolio-website\icons8-amplifier-94.png">
+    <link href="/routed-portfolio_styles.css" rel="stylesheet" /> 
+    <script src="https://kit.fontawesome.com/f19f437651.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="dark:text-[#FDF6E3] dark:bg-slate-900" id="about-me">
+    <div class="me-and-cat">
+        <div class="me">
+            <h1>About Me</h1>
+            <br>
+            <p>For the majority of my life, I had considered myself a student of the life sciences, with my main focus of passion being the fields of chemistry and physics, and even ended up choosing my major at first in chemistry. However, with the passage of time, unexpectedly, I had come to realize that perhaps this really isn't what I want or where I see myself. Cue September 2025, when I first decided to learn front-end, HTML is what I started with, and ever since then I've been completely immersed and obsessed with the world of web development, web design, and currently throwing my plans towards even UI and UX.<br><span style="color:#FF4444">I also like cats, here's my cat!</span></p>
+        </div>
+        <a href=https://en.wikipedia.org/wiki/Turkish_Angora target="_blank"><img src="/pics/mycat-pic.JPG" alt="this-my-cat" class="my-cat"></a>
+    </div>
+    <hr class="mt-6">
+    <div class="things-done">
+        <div class="options">
+            <h2 class="options-links active-links text-3xl text-center" onclick="openTab('skills')">Skills <i class="fa-solid fa-code"></i></h2>
+            <h2 class="options-links text-3xl text-center" onclick="openTab('experience')">Experience <i class="fa-solid fa-briefcase"></i></h2>
+            <h2 class="options-links text-3xl text-center" onclick="openTab('education')">Education <i class="fa-solid fa-school"></i></h2>
+        </div>
+        <div class="inside-options">
+            <div class="options-content active-tab" id="skills">
+                <ul class="grid grid-cols-4 gap-y-12 ml-64 mr-24 text-xl">
+                    <li class="text-[#F5EAD0] dark:text-slate-900 text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[143px] h-16 py-4 px-5 rounded-3xl hover:shadow-xl after:bg-[#F5EAD0] dark:after:bg-slate-900"><a href="/certificates-CVs/HTML-Certificate.pdf" target="_blank"><i class="fa-brands fa-html5"></i>HTML</a></li>
+                    <li class="text-[#F5EAD0] dark:text-slate-900 text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[125px] h-16 py-4 px-5 rounded-3xl hover:shadow-xl after:bg-[#F5EAD0] dark:after:bg-slate-900"><a href="/certificates-CVs/CSS-Certificate.pdf" target="_blank"><i class="fa-brands fa-css3-alt"></i>CSS</a></li>
+                    <li class="text-[#F5EAD0] dark:text-slate-900 text-xl hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[202px] h-16 py-4 px-5 rounded-3xl hover:shadow-xl after:bg-[#F5EAD0] dark:after:bg-slate-900"><a href="/certificates-CVs/JS-Certificate.pdf" target="_blank"><i class="fa-brands fa-square-js"></i></i>JavaScript</a></li>
+                    <li class="text-[#F5EAD0] dark:text-slate-900 hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[160px] h-16 py-4 px-5 rounded-3xl hover:shadow-xl after:bg-[#F5EAD0] dark:after:bg-slate-900"><i class="fa-brands fa-node-js"></i>Node.js</li>
+                    <li class="text-[#F5EAD0] dark:text-slate-900 hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[206px] h-16 py-4 px-6 rounded-3xl hover:shadow-xl after:bg-[#F5EAD0] dark:after:bg-slate-900">Tailwind CSS</li>
+                    <li class="text-[#F5EAD0] dark:text-slate-900 hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[246px] h-16 py-4 px-5 rounded-3xl hover:shadow-xl after:bg-[#F5EAD0] dark:after:bg-slate-900"><i class="fa-brands fa-square-git"></i>Git / GitHub<i class="fa-brands fa-square-github"></i></li>
+                    <li class="text-[#F5EAD0] dark:text-slate-900 hover:translate-x-2 hover:-translate-y-1 duration-500 ease-in-ease-out bg-red-500 w-[23rem] h-16 py-4 px-6 rounded-3xl hover:shadow-xl after:bg-[#F5EAD0] dark:after:bg-slate-900"><i class="fa-solid fa-terminal"></i>Bash / Command Prompt</li>
+                </ul>
+            </div>
+            <div class="options-content" id="experience">
+                <ul class="grid grid-cols-3 gap-y-12 ml-36 mr-20">
+                    <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                        <p><span>Operations Manager</span></p>
+                        <p class="text-slate-900 dark:text-[#FDF6E3]">Hakim Co 2021-2025</p>
+                    </li>
+                    <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                        <p><span>Employee</span></p>
+                        <p class="text-slate-900 dark:text-[#FDF6E3]">Hakim Co 07/2017-08/2017</p>
+                    </li>            
+                    <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                        <p><span>Lab Intern</span></p>
+                        <p class="text-slate-900 dark:text-[#FDF6E3]">Pharmadex 06/2017-07/2017</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="options-content" id="education">
+                <ul class="grid grid-cols-3 gap-y-20 ml-32 mr-20">
+                    <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                        <p><span>Bachelors in Pharmacy</span></p>
+                        <p class="text-slate-900 dark:text-[#FDF6E3]">Lebanese Univeristy 2025-2031</p>
+                    </li>
+                    <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                        <p><span>Bachelors in Chemistry</span></p>
+                        <p class="text-slate-900 dark:text-[#FDF6E3]">AUB 2019-2022</p>
+                    </li> 
+                    <li class="flex flex-col px-3 py-2 bg-[#F5EAD0] dark:bg-slate-800">
+                        <p><span>International Baccaleaurate</span></p>
+                        <p class="text-slate-900 dark:text-[#FDF6E3]">International College 2019</p>
+                    </li>           
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
