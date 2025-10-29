@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const os = require ('os');
+const os = require('os');
 
 const affirmations = [
     'This is gonna be your year',
@@ -20,7 +20,7 @@ function saveRandomAffirmationToDesktop() {
         if (err) {
             console.error('Error writing the affirmation to the file:', err);
         } else {
-          console.log('Read affirmation saved to:', newFilePath);
+            console.log('Read affirmation saved to:', newFilePath);
         }
     });
 }

@@ -3,24 +3,23 @@ const http = require('http');
 let mood = '';
 const contentType = 'text/html; charset=utf-8'
 const contentType2 = 'text/plain; charset=utf-8'
-let content = '';
 
 const server = http.createServer((request, response) => {
     if (request.method === 'GET') {
         console.log(`Current Mood: ${mood}`)
         response.writeHead(200, { 'Content-Type': contentType })
-        response.end(mood? `<h1>Current Mood: ${mood}</h1>` : `<h1>Please fucking tell me what youre feeling you bitchass!</h1>`)
-    } else if (request.method === 'PUT') {
+        response.end(mood? `<h1>Current Mood: ${mood}</h1>` : `<h1>You MUST tell me what you feel</h1>`)
+    } else if (request.method === 'PATCH') {
         let newMood = ''
         request.on('data', (chunk) => {
             newMood += chunk;
         })
         request.on('end', () => {
             console.log('Current Mood:', mood);
-            mood = newMood;
-            console.log('Updated Mood:', mood);
+            mood += newMood;
+            console.log('Edited Mood:', mood);
             response.writeHead(200, { 'Content-Type': contentType2 });
-            response.end('Mood successfully updated')
+            response.end('Mood successfully edited')
         })
     } else if (request.method === 'POST') {
         mood = '';
